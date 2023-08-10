@@ -1,0 +1,14 @@
+{
+  "twitch": {
+    "channelName": "eliteSCHW31N",
+    "channelId": "118277573"
+  },
+  "web": {
+    "token": "",
+    "url": ""
+  },
+  "server":{
+    "ip": "0.0.0.0",
+    "port": "8080"
+  }
+}

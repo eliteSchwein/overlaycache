@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "target": "es6",
+    "allowJs": true,
+    "moduleResolution": "classic",
+    "esModuleInterop": false,
+    "resolveJsonModule": false
+  }
+}
