@@ -6,10 +6,10 @@ export function initRequestSchedule() {
     const config = getConfig()
 
     setInterval(async () => {
-        await requestData("twitch", `${config.web.url}/?getdata=twitch`)
-        await requestData("announcement", `${config.web.url}/?variable=announcement`)
-        await requestData("ads", `${config.web.url}/?getad=true&token=${config.web.token}`)
-        await requestData("theme", `${config.web.url}/?getthemecolor`)
+        await requestData("twitch", `${config.web.url}/api?type=5000&method=getData&data=twitch`)
+        await requestData("announcement", `${config.web.url}/api?type=5000&method=variable&variable=announcement`)
+        await requestData("ads", `${config.web.url}/api?type=5000&method=getAd&token=${config.web.token}`)
+        await requestData("theme", `${config.web.url}/api?type=5000&method=getTheme`)
     }, 1000*5)
 }
 
